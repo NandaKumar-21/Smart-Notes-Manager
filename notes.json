@@ -1,0 +1,37 @@
+[
+    {
+        "id": "20240101090000000001",
+        "title": "Welcome to Smart Notes Manager",
+        "content": "This is your first note. You can create, edit, search, and delete notes using the toolbar above.\n\nKeyboard shortcuts:\n- Ctrl+N: New note\n- Ctrl+S: Save note\n- Ctrl+F: Focus search\n- Delete: Remove selected note from the list",
+        "created_at": "2024-01-01 09:00:00",
+        "modified_at": "2024-01-01 09:00:00"
+    },
+    {
+        "id": "20240101093000000002",
+        "title": "Project Ideas",
+        "content": "1. Build a REST API with FastAPI and PostgreSQL\n2. Create a CLI tool for automating file organisation\n3. Develop a data pipeline using Apache Airflow\n4. Contribute to an open-source Python library\n5. Write a technical blog post about clean architecture",
+        "created_at": "2024-01-01 09:30:00",
+        "modified_at": "2024-01-02 14:15:00"
+    },
+    {
+        "id": "20240102100000000003",
+        "title": "Python Best Practices",
+        "content": "- Use type hints for all function signatures\n- Write docstrings for public classes and methods\n- Keep functions small and focused on a single responsibility\n- Prefer composition over inheritance\n- Use dataclasses for simple data containers\n- Handle exceptions at the appropriate level\n- Write tests before fixing bugs",
+        "created_at": "2024-01-02 10:00:00",
+        "modified_at": "2024-01-02 10:45:00"
+    },
+    {
+        "id": "20240103080000000004",
+        "title": "Meeting Notes - Sprint Planning",
+        "content": "Date: 2024-01-03\nAttendees: Team Alpha\n\nAction items:\n- Review pull requests by end of day\n- Update documentation for the authentication module\n- Schedule code review session for the new feature branch\n- Investigate performance regression in the reporting service",
+        "created_at": "2024-01-03 08:00:00",
+        "modified_at": "2024-01-03 08:30:00"
+    },
+    {
+        "id": "20240104120000000005",
+        "title": "Reading List",
+        "content": "Books to read:\n- Clean Code by Robert C. Martin\n- The Pragmatic Programmer by Hunt and Thomas\n- Designing Data-Intensive Applications by Martin Kleppmann\n- Python Cookbook by David Beazley\n\nArticles:\n- Real Python tutorials on async programming\n- Martin Fowler's blog on microservices patterns",
+        "created_at": "2024-01-04 12:00:00",
+        "modified_at": "2024-01-04 12:00:00"
+    }
+]

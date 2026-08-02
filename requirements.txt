@@ -1,0 +1,8 @@
+# Smart Notes Manager - Python Dependencies
+# All dependencies are part of the Python standard library.
+# No third-party packages are required.
+#
+# Python >= 3.8 is required.
+# Tkinter must be available in your Python installation.
+# On some Linux distributions, install it with:
+#   sudo apt-get install python3-tk
