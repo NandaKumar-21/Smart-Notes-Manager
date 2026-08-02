@@ -3,7 +3,7 @@ models.py - Data models for Smart Notes Manager.
 """
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 @dataclass
@@ -12,15 +12,15 @@ class Note:
 
     title: str
     content: str
-    created_at: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-    modified_at: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-    id: str = field(default_factory=lambda: datetime.now().strftime("%Y%m%d%H%M%S%f"))
+    created_at: str = field(default_factory=lambda: datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"))
+    modified_at: str = field(default_factory=lambda: datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"))
+    id: str = field(default_factory=lambda: datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S%f"))
 
     def update_content(self, title: str, content: str) -> None:
         """Update the note's title and content, refreshing the modified timestamp."""
         self.title = title
         self.content = content
-        self.modified_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.modified_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
     def to_dict(self) -> dict:
         """Serialize the note to a dictionary for JSON storage."""
